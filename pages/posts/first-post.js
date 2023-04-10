@@ -19,13 +19,6 @@ export default function FirstPost() {
           }
         />
         <h1>First Post</h1>
-        <Image
-          src="/images/profile.png"
-          height={144} // Desired size with correct aspect ratio
-          width={144} // Desired size with correct aspect ratio
-          alt="Your Name"
-        />
-        <Link href="/">Back to home</Link>
       </Layout>
     </>
   );

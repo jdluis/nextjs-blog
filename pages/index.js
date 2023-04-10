@@ -1,24 +1,20 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Link from 'next/link';
+import Layout, { siteTitle } from '../components/layout';
+import utilStyles from '../styles/utils.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout home>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{siteTitle}</title>
       </Head>
-
-      <main>
-        <h1 className={styles.title}>
-        Learn <Link href="/posts/first-post">this page!</Link>
-        </h1>
-      </main>
-
-      <footer>
-       <h4>jdluis learning</h4>
-      </footer>
-    </div>
-  )
+      <section className={utilStyles.headingMd}>
+        <p>Hello! I'm a FrontEnd Web Developer from Canary Island. You can contact me on my website jdluis.com</p>
+        <p>
+          (This is a sample website - you’ll be building a site like this on{' '}
+          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+        </p>
+      </section>
+    </Layout>
+  );
 }
